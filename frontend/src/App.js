@@ -13,7 +13,7 @@ function App() {
 
   const fetchJoke = () => {
     setLoading(true);
-    fetch("http://127.0.0.1:5000/api/joke")
+    fetch("https://get-the-joke.onrender.com/api/joke")
       .then((response) => response.json())
       .then((data) => {
         setJoke(data.joke || "No joke found.");
